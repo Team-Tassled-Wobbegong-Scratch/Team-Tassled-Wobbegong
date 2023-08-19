@@ -1,0 +1,17 @@
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+
+const NavBar = () => {
+
+  return (
+    <div>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+    </div>
+  );
+};
+
+export default NavBar;
