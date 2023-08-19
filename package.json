@@ -2,7 +2,7 @@
   "name": "team-tassled-wobbegong",
   "version": "1.0.0",
   "description": "",
-  "main": "./server/server.js",
+  "main": "./client/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production webpack",
@@ -38,6 +38,6 @@
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
     "webpack-cli": "^5.1.4",
-    "webpack-devserver": "^0.0.6"
+    "webpack-dev-server": "^4.15.1"
   }
 }
