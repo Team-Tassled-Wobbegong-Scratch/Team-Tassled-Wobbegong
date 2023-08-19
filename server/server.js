@@ -17,7 +17,7 @@ dbConnect();
 const feedRouter = require('./routes/feed.js');
 
 // ADD & DELETE >>TEST << ROUTE //
-const testRouter = require('./routes/test')
+const testRouter = require('./routes/test');
 app.use('/api/test', testRouter);
 
 // DEFINE ROUTE HANDLERS //

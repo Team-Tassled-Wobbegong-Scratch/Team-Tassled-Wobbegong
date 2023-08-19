@@ -5,11 +5,11 @@ const testController = require('../controllers/testController.js');
 
 
 router.post('/', testController.createCat, (req, res) => {
-  return res.status(200).send('cat created')
+  return res.status(200).send('cat created');
 });
 
 router.delete('/', testController.deleteCat, (req, res) => {
-  return res.status(200).send('Cat Removed')
+  return res.status(200).send('Cat Removed');
 });
 
 
