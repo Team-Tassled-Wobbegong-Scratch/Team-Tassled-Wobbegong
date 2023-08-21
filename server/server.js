@@ -16,10 +16,16 @@ dbConnect();
 // ROUTERS //
 const feedRouter = require('./routes/feed.js');
 const catRouter = require('./routes/cat.js');
+const healthyRouter = require('./routes/healthy.js');
+const cleanRouter = require('./routes/clean.js');
+const groomRouter = require('./routes/groom.js');
 
 // DEFINE ROUTE HANDLERS //
 app.use('/api/feed', feedRouter);
 app.use('/api/cat', catRouter);
+app.use('/api/healthy', healthyRouter);
+app.use('/api/clean', cleanRouter);
+app.use('/api/groom', groomRouter);
 
 // HANDLE STATIC FILES //
 app.use(express.static(path.resolve(__dirname, '../build')));

@@ -1,4 +1,5 @@
 @import './stylesheets/catdisplay.css';
+@import './stylesheets/navbar.css';
 
 body {
   margin: 0;
