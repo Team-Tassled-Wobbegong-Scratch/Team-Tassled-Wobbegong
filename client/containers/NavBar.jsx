@@ -27,13 +27,21 @@ const NavBar = () => {
 
   return (
     <div>
-      <button type='button' onClick={feedHandler}>
-        <img src=
+      <button type="button" onClick={feedHandler}>
+        <img src="https://cdn.discordapp.com/attachments/384155828715782145/1143216382838845500/feed.png" />
       </button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
-      <button>5</button>
+      <button type="button">
+        <img src="https://cdn.discordapp.com/attachments/384155828715782145/1143216382528462980/clean.png" />
+      </button>
+      <button type="button">
+        <img src="https://cdn.discordapp.com/attachments/384155828715782145/1143216382197117040/groom.png" />
+      </button>
+      <button type="button">
+        <img src="https://cdn.discordapp.com/attachments/384155828715782145/1143216381886734407/health.png" />
+      </button>
+      <button type="button">
+        <img src="https://media.discordapp.net/attachments/384155828715782145/1143216381563777124/log.png" />
+      </button>
     </div>
   );
 };

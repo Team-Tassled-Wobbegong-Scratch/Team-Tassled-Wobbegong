@@ -18,7 +18,7 @@ const initialState = {
   groomed: null
 };
 
-const catReducer = createReducer(state = initialState, (builder) => {
+const catReducer = createReducer(initialState, (builder) => {
   builder
     .addCase(fetchCat.fulfilled, (state, action) => {
       const { hungry, healthy, clean, groomed } = action.payload;
