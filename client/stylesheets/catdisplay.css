@@ -1,0 +1,9 @@
+@import './catimage.css';
+@import './moodiconcontainer.css';
+
+.catdisplay {
+  background-image: url('../assets/images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
