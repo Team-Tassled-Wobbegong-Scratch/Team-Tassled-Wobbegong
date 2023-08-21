@@ -1,7 +1,7 @@
 import * as actions from '../actions/actions.js';
 import { createReducer, createAsyncThunk } from '@reduxjs/toolkit';
 
-const fetchCat = createAsyncThunk('fetchCat', async () => {
+const fetchCat = createAsyncThunk('cat/fetchCat', async () => {
   try {
     const res = await fetch('/api/cat');
     const cat = await res.json();

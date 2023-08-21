@@ -17,9 +17,12 @@ const CatDisplay = () => {
   console.log('Hungry?', catMood.hungry);
 
   return (
-    <div>
-      <img />
-      <div>
+    <div className='catdisplay'>
+      <img id='catimage' />
+      <div className='mood-icon-container'>
+        <img />
+        <img />
+        <img />
         <img />
       </div>
     </div>

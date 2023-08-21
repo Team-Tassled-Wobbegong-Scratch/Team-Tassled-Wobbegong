@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 // const mongoose = require('mongoose');
 const app = express();
-const PORT = 3000; 
+const PORT = 3000;
 const dbConnect = require('./db.js');
 
 // HANDLE PARSE, FORM DATA, AND CORS //
@@ -41,5 +41,5 @@ app.use((err, req, res, next) => {
   return res.status(errorObj.status).json(errorObj.message);
 });
 
-  
+
 app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
