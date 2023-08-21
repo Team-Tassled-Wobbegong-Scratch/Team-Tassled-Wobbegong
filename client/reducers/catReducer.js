@@ -28,7 +28,7 @@ const catReducer = createReducer(initialState, (builder) => {
       state.groomed = groomed;
     })
     .addCase(actions.feed, (state, action) => {
-      state.hungry = action.payload;
+      state.hungry = action.payload.fed;
     })
 })
 

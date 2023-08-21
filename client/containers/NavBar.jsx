@@ -5,7 +5,7 @@ import { feed } from '../actions/actions.js';
 const NavBar = () => {
 
   const dispatch = useDispatch();
-  const cat = useSelector(state => state);
+  const cat = useSelector(state => state.cats);
 
   const feedHandler = async (e) => {
     if (cat.hungry === true) {
@@ -27,11 +27,21 @@ const NavBar = () => {
 
   return (
     <div>
-      <button type='button' onClick={feedHandler}>Feed</button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
-      <button>5</button>
+      <button id="feed" type="button" className="button" onClick={feedHandler}>
+        <img src="https://cdn.discordapp.com/attachments/384155828715782145/1143216382838845500/feed.png" />
+      </button>
+      <button id="clean" type="button" className="button">
+        <img src="https://cdn.discordapp.com/attachments/384155828715782145/1143216382528462980/clean.png" />
+      </button>
+      <button id="groom" type="button" className="button">
+        <img src="https://cdn.discordapp.com/attachments/384155828715782145/1143216382197117040/groom.png" />
+      </button>
+      <button id="health" type="button" className="button">
+        <img src="https://cdn.discordapp.com/attachments/384155828715782145/1143216381886734407/health.png" />
+      </button>
+      <button id="log" type="button" className="button">
+        <img src="https://media.discordapp.net/attachments/384155828715782145/1143216381563777124/log.png" />
+      </button>
     </div>
   );
 };

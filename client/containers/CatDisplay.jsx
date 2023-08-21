@@ -1,5 +1,4 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import MoodIcon from '../components/MoodIcon.jsx';
 import { fetchCat } from '../reducers/catReducer.js'
