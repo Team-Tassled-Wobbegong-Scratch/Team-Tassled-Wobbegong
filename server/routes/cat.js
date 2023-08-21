@@ -6,7 +6,7 @@ const catController = require('../controllers/catController.js');
 
 
 router.get('/', catController.getCat, (req, res) => {
-  return res.status(200).send(res.locals.cat);
+  return res.status(200).json(res.locals.cat);
 });
 
 router.post('/', catController.createCat, (req, res) => {
