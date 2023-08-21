@@ -15,13 +15,11 @@ dbConnect();
 
 // ROUTERS //
 const feedRouter = require('./routes/feed.js');
-
-// ADD & DELETE >>TEST << ROUTE //
-const testRouter = require('./routes/test');
-app.use('/api/test', testRouter);
+const catRouter = require('./routes/cat.js');
 
 // DEFINE ROUTE HANDLERS //
 app.use('/api/feed', feedRouter);
+app.use('/api/cat', catRouter);
 
 // HANDLE STATIC FILES //
 app.use(express.static(path.resolve(__dirname, '../build')));

@@ -6,13 +6,14 @@ const feedController = {};
 feedController.update = async (req, res, next) => {
   console.log('Update controller hit')
   try {
-    const { fed } = req.body;
+    const { hungry } = req.body;
     const newFeed = await FeedingLog.create({food: 'Lasagna', amount: 1})
     const currentCat = await Cat.findOne({name: 'Gilbert'});
     currentCat.feedingLog.push(newFeed);
     currentCat.lastFed = Date.now()
-    currentCat.save();
-    res.locals.feedUpdate = fed;
+    currentCat.hungry = hungry;
+    await currentCat.save();
+    res.locals.feedUpdate = hungry;
     return next();
   } catch (err) {
     return next ({
