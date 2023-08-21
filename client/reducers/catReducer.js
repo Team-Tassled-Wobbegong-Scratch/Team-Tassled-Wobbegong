@@ -12,7 +12,7 @@ const fetchCat = createAsyncThunk('cat/fetchCat', async () => {
 });
 
 const initialState = {
-  hungry: null, // should be updated to true or false;
+  hungry: null,
   healthy: null,
   clean: null,
   groomed: null
@@ -29,6 +29,15 @@ const catReducer = createReducer(initialState, (builder) => {
     })
     .addCase(actions.feed, (state, action) => {
       state.hungry = action.payload.fed;
+    })
+    .addCase(actions.heal, (state, action) => {
+      state.healthy = action.payload.healthy;
+    })
+    .addCase(actions.clean, (state, action) => {
+      state.clean = action.payload.clean;
+    })
+    .addCase(actions.groom, (state, action) => {
+      state.groomed = action.payload.groom;
     })
 })
 

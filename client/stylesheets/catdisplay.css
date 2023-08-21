@@ -2,8 +2,12 @@
 @import './moodiconcontainer.css';
 
 .catdisplay {
-  background-image: url('../assets/images/bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  height: 80vh;
+  width: 100vw;
+}
+
+#bgimage {
+  position: absolute;
+  height: 80vh;
+  width: 150vw;
 }
