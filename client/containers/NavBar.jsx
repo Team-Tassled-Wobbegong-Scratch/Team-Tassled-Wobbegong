@@ -26,22 +26,12 @@ const NavBar = () => {
   };
 
   return (
-    <div>
-      <button id="feed" type="button" className="button" onClick={feedHandler}>
-        <img src="https://cdn.discordapp.com/attachments/384155828715782145/1143216382838845500/feed.png" />
-      </button>
-      <button id="clean" type="button" className="button">
-        <img src="https://cdn.discordapp.com/attachments/384155828715782145/1143216382528462980/clean.png" />
-      </button>
-      <button id="groom" type="button" className="button">
-        <img src="https://cdn.discordapp.com/attachments/384155828715782145/1143216382197117040/groom.png" />
-      </button>
-      <button id="health" type="button" className="button">
-        <img src="https://cdn.discordapp.com/attachments/384155828715782145/1143216381886734407/health.png" />
-      </button>
-      <button id="log" type="button" className="button">
-        <img src="https://media.discordapp.net/attachments/384155828715782145/1143216381563777124/log.png" />
-      </button>
+    <div id="navbar">
+      <button id="feed" type="button" className="button" onClick={feedHandler}></button>
+      <button id="clean" type="button" className="button"></button>
+      <button id="groom" type="button" className="button"></button>
+      <button id="health" type="button" className="button"></button>
+      <button id="log" type="button" className="button"></button>
     </div>
   );
 };
