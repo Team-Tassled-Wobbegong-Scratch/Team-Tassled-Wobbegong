@@ -1,7 +1,7 @@
 import * as actions from '../actions/actions.js';
 import { createReducer, createAsyncThunk } from '@reduxjs/toolkit';
 
-const fetchCat = createAsyncThunk('fetchCat', async () => {
+const fetchCat = createAsyncThunk('cat/fetchCat', async () => {
   try {
     const res = await fetch('/api/cat');
     const cat = await res.json();
@@ -18,7 +18,7 @@ const initialState = {
   groomed: null
 };
 
-const catReducer = createReducer(state = initialState, (builder) => {
+const catReducer = createReducer(initialState, (builder) => {
   builder
     .addCase(fetchCat.fulfilled, (state, action) => {
       const { hungry, healthy, clean, groomed } = action.payload;

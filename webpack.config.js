@@ -30,6 +30,7 @@ module.exports = {
       },
       {
         test: /.s?[ac]ss$/i,
+        // test: /\.s?css/,
         exclude: /node_modules/,
         use: [
           'style-loader',
@@ -41,7 +42,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'index.html'), 
+      template: path.join(__dirname, 'index.html'),
     }), // maybe a problem-child here
   ],
   resolve: {
