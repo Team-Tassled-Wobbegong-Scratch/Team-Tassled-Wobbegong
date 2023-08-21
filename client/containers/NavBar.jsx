@@ -27,7 +27,9 @@ const NavBar = () => {
 
   return (
     <div>
-      <button type='button' onClick={feedHandler}>Feed</button>
+      <button type='button' onClick={feedHandler}>
+        <img src=
+      </button>
       <button>2</button>
       <button>3</button>
       <button>4</button>
