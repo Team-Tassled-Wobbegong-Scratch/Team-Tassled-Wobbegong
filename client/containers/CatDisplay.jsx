@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchCat } from '../reducers/catReducer.js'
+import { fetchCat } from '../reducers/catReducer.js';
+import catImage from '../assets/images/kitty.png';
+import bgImage from '../assets/images/bg.jpg';
 
 const CatDisplay = () => {
 
@@ -17,7 +19,8 @@ const CatDisplay = () => {
 
   return (
     <div className='catdisplay'>
-      <img id='catimage' />
+      <img id='bgimage' src={bgImage} alt="" />
+      <img id='catimage' src={catImage}/>
       <div className='mood-icon-container'>
         <img />
         <img />

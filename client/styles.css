@@ -1,1 +1,5 @@
 @import './stylesheets/catdisplay.css';
+
+body {
+  margin: 0;
+}
