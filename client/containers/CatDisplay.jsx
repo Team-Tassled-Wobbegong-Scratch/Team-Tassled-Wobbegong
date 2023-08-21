@@ -11,7 +11,7 @@ const CatDisplay = () => {
     dispatch(fetchCat());
   }, []);
 
-  const catMood = useSelector(state => state);
+  const catMood = useSelector(state => state.cats);
 
   console.log('KittyMood?', catMood);
   console.log('Hungry?', catMood.hungry);
