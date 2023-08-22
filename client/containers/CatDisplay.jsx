@@ -15,7 +15,7 @@ const CatDisplay = () => {
   const catMood = useSelector(state => state.cats);
 
   console.log('KittyMood?', catMood);
-  console.log('Hungry?', catMood.hungry);
+  //console.log('Hungry?', catMood.hungry);
 
   return (
     <div className='catdisplay'>

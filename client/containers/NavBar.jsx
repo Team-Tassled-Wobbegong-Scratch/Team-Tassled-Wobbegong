@@ -26,11 +26,11 @@ const NavBar = () => {
   };
 
   const cleanHandler = async (e) => {
-    if (cat.hungry === true) {
+    if (cat.clean === false) {
       const result = await fetch('/api/clean', {
         method: 'PUT',
         body: JSON.stringify({
-          hungry: false,
+          clean: true,
         }),
         headers: {
           'Content-Type': 'application/json'
@@ -44,11 +44,11 @@ const NavBar = () => {
   };
 
   const groomHandler = async (e) => {
-    if (cat.hungry === true) {
+    if (cat.groomed === false) {
       const result = await fetch('/api/groom', {
         method: 'PUT',
         body: JSON.stringify({
-          hungry: false,
+          groom: true,
         }),
         headers: {
           'Content-Type': 'application/json'
@@ -62,11 +62,11 @@ const NavBar = () => {
   };
 
   const healHandler = async (e) => {
-    if (cat.hungry === true) {
+    if (cat.healthy === false) {
       const result = await fetch('/api/healthy', {
         method: 'PUT',
         body: JSON.stringify({
-          healthy: false,
+          healthy: true,
         }),
         headers: {
           'Content-Type': 'application/json'

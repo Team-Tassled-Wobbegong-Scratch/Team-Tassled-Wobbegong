@@ -1,8 +1,8 @@
 #catimage {
   position: fixed;
-  top: 60vh;
-  left: 35vw;
-  height: 150px;
+  top: 92vh;
+  left: 60vw;
+  height: 200px;
   animation: wiggle 2s ease-in-out infinite;
 }
 

@@ -2,12 +2,13 @@
 @import './moodiconcontainer.css';
 
 .catdisplay {
-  height: 80vh;
+  height: 0vh;
   width: 100vw;
 }
 
 #bgimage {
   position: absolute;
-  height: 80vh;
+  height: 150vh;
   width: 150vw;
+  /* object-fit: cover; */
 }

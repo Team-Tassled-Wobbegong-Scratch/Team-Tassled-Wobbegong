@@ -21,11 +21,11 @@ const initialState = {
 const catReducer = createReducer(initialState, (builder) => {
   builder
     .addCase(fetchCat.fulfilled, (state, action) => {
-      const { hungry, healthy, clean, groomed } = action.payload;
+      const { hungry, healthy, clean, groom } = action.payload;
       state.hungry = hungry;
       state.healthy = healthy;
       state.clean = clean;
-      state.groomed = groomed;
+      state.groomed = groom;
     })
     .addCase(actions.feed, (state, action) => {
       state.hungry = action.payload.fed;
